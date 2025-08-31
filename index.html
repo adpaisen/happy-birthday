@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="instruction">Click the cake!</p>
+
+    <div class="container">
+        <label>
+            <div class="cake">
+                <img src="images/cake.png" alt="Birthday Cake">
+            </div>
+            <!-- ✅ Fixed input -->
+            <input id="messageState" type="checkbox" hidden/>
+        </label>
+        <div class="message">
+            <h1 style="font-family: Cinzel, serif; font-size: 40px;">Dear Lei,</h1>
+            <p>
+                &emsp; ikaw ang pag ibig na dumating nang walang babala. ni hindi pa rin ako makapaniwala, isang umaga at ikaw na agad ang una kong chinachat. at nang sumagot ka, i smiled. doon ko narealize na sayo na pala ang puso ko. hawak mo na to kahit bago ko pa tuluyang maunawaan. 
+                <br><br>
+                Happy happy birthday to you!! On this special day. I just want to remind you again how blessed and grateful I am to have you in my life. Isa ka talagang blessing and I thank God for giving me someone as amazing, loving, supporting, and inspiring as you.
+                <br><br>
+                Sana maging memorable and birthday mo, puno ng joy, laughter, and all the love you deserve. Most of all, I wish you good health, because I want to spend many more years with you, sharing dreams, adventures, and countless memories together. 
+                <br><br>
+                Hindi ka lang basta mahalaga sakin, ikaw na yung safe place ko, yung isa sa mga nagbibigay ng happiness ko, at motivation ko sa araw araw. Alam mo naman na sobrang proud ako sa lahat ng na achieve mo at excited ako makita pa lahat ng mga susunod na blessings na darating sayo.
+                <br><br>
+                Lagi mong tatandaan na kahit anong mangyari, nandito lang ako para suportahan ka, pasayahin ka, at mahalin ka nang walang hanggan.
+                <br><br>
+                Happy birthday once again, mi amor! I hope today brings you endless smiles, unforgettable memories and everything your heart desires.
+            </p>
+            <br>
+            <div class="sincere">
+                <p style="font-weight: bold;">With Love,</p>
+                <p>AD</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🎶 Background Music -->
+    <audio id="bg-music" loop hidden>
+        <source src="music/Happy Birthday (Piano Version) - Helmut Schenker (youtube).mp3" type="audio/mpeg">
+        <source src="music/Rumi & Jinu - Free (Lyrics) KPop Demon Hunters.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- 🎶 Music Control Button -->
+    <div id="music-controls" style="display:none; position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; align-items:center; font-family: Quicksand; background: rgba(255,255,255,0.8); padding: 8px 12px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+      <span id="now-playing" style="font-weight:600; font-size: 14px; margin-right: 10px;">🎵</span>
+      <button id="pause-btn" style="padding: 6px 12px; border: none; border-radius: 8px; background: #6b9dfc; color: white; cursor: pointer;">⏸ Pause</button>
+      <button id="next-btn" style="padding: 6px 12px; border: none; border-radius: 8px; background: #4caf50; color: white; cursor: pointer;">⏭ Next</button>
+    </div>
+
+    <!-- jQuery -->
+    <script src="jquery.js"></script>
+    <script src="jquery2.1.js"></script>
+
+    <!-- 🎊 Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+    <!-- Your Script -->
+    <script defer src="script.js"></script>
+</body>
+</html>
